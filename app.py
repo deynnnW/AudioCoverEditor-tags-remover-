@@ -54,7 +54,7 @@ class AudioCoverApp(ctk.CTk, TkinterDnD.DnDWrapper):
         super().__init__()
         self.TkdndVersion = TkinterDnD._require(self)
 
-        self.title("Audio Cover Changer — Редактор обложек и тегов песен")
+        self.title("Audio Cover Changer by wdeynnn — Редактор обложек и тегов")
         self.geometry("1100, 720")
         self.minsize(960, 640)
 
@@ -324,7 +324,7 @@ class AudioCoverApp(ctk.CTk, TkinterDnD.DnDWrapper):
         status_bar.grid_columnconfigure(0, weight=1)
 
         self.lbl_status = ctk.CTkLabel(
-            status_bar, text="Готово к работе. Добавьте аудиофайлы для начала.",
+            status_bar, text="Audio Cover Editor by wdeynnn | Готово к работе.",
             text_color="#94A3B8", font=ctk.CTkFont(size=12), anchor="w"
         )
         self.lbl_status.grid(row=0, column=0, padx=12, pady=2, sticky="w")
